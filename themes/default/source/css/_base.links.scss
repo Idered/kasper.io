@@ -1,0 +1,12 @@
+a {
+    color: $c-primary;
+        
+    &,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

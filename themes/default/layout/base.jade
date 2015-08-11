@@ -1,0 +1,13 @@
+doctype html
+html(lang=config.language)
+  head
+    include _partial/head
+  body
+  .c-main
+    .c-main-inner
+      include _partial/page-head
+      main.c-main-content
+        block content
+      include _partial/page-foot
+    aside.c-sidebar
+      include _partial/sidebar

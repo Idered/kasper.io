@@ -1,0 +1,7 @@
+ul.c-list-post
+  each post in page.posts.toArray()
+    li.c-list-post__item
+      - var date = post.date.format("D-MM-YYYY")
+      h2.c-list-post__title
+        a.c-list-post__link(href=url_for(post.path))= post.title
+      time.c-list-post__date(title=date datetime=date)= post.date.format("MMM D")

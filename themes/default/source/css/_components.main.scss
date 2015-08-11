@@ -1,0 +1,25 @@
+.c-main {
+    @extend %u-clearfix;
+    max-width: $page-width;
+    margin: 30px auto;
+
+    @include at(desk) {
+        margin: 60px auto;
+        padding-right: $sidebar-width;
+    }
+}
+
+.c-main-inner {
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+    width: 100%;
+    box-shadow: -1px 0 0 rgba(21,21,21,.08),
+                1px 0 0 rgba(21,21,21,.08),
+                0 1px 0 rgba(21,21,21,.15);
+}
+
+.c-main-content {
+    margin: 30px;
+}

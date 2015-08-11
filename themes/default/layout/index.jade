@@ -1,0 +1,10 @@
+extends base
+
+block content
+  include _partial/list-posts
+
+  nav.c-pagination
+    if page.next
+      a.c-pagination__next(href=url_for(page.next_link)) Older articles
+    if page.prev
+      a.c-pagination__prev(href=url_for(page.prev_link)) Newer articles

@@ -1,0 +1,32 @@
+.c-list-post {
+    @extend %o-list-bare;
+    margin-bottom: 30px;
+
+    &__item  {
+        padding-right: 80px;
+        position: relative;
+        line-height: 28px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ccc;
+    }
+}

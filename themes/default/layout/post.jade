@@ -1,0 +1,11 @@
+extends base
+
+block content
+  - var date = page.date.format("D-MM-YYYY")
+  article.c-post
+    header.c-post__head
+      h1.c-post__title= page.title
+      footer.c-post__meta
+        time(title=date datetime=date)= page.date.format("MMMM D, YYYY")
+    section.c-post__body
+      != page.content

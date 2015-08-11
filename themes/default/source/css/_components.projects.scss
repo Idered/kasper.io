@@ -1,0 +1,45 @@
+.c-projects {
+    margin-bottom: 30px;
+
+    @include at(lap) {
+        margin-left: -30px;
+    }
+
+    &__item {
+        @include at(lap) {
+            width: 50%;
+            float: left;
+            padding-left: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        border-radius: 3px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    &__title {
+        color: #444;
+        font-size: 20px;
+        margin-bottom: 7px;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                text-decoration: none;
+                color: $c-primary;
+            }
+        }
+    }
+
+    &__desc {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}

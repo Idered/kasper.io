@@ -1,0 +1,66 @@
+$spacing-join:       30px;
+$spacing-join-large: 70px;
+$spacing-join-small: 15px;
+$spacing-join-tiny:  7px;
+
+%o-join,
+.o-join {
+    list-style-type: none;
+
+    > * {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: $spacing-join;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+/*
+ * Size
+ */
+%o-join--tiny > *,
+.o-join--tiny > * {
+    margin-right: $spacing-join-tiny;
+}
+
+%o-join--small > *,
+.o-join--small > * {
+    margin-right: $spacing-join-small;
+}
+
+%o-join--large > *,
+.o-join--large > * {
+    margin-right: $spacing-join-large;
+}
+
+/*
+ * Align
+ */
+%o-join--middle > *,
+.o-join--middle > * {
+    vertical-align: middle;
+}
+
+%o-join--bottom > * ,
+.o-join--bottom > * {
+    vertical-align: bottom;
+}
+
+/*
+ * Other
+ */
+%o-join--force,
+.o-join--force {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    > * {
+        float: left;
+    }
+}

@@ -1,0 +1,50 @@
+.o-btn,
+%o-btn {
+    font-weight: 700;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 15px;
+    transition: background-color .125s ease-in-out, 
+                box-shadow .125s ease-in-out, 
+                border-color .125s ease-in-out, 
+                color .125s ease-in-out;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        box-shadow: inset 0 -8em 0 rgba(255, 255, 255, .2);
+    }
+
+    &:active {
+        box-shadow: inset 0 -8em 0 rgba(0, 0, 0, .1);
+    }
+
+    &--primary {
+        background: $c-primary;
+        color: #fff;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &--outline {
+        color: #999;
+        border: 2px solid #e5e5e5;
+
+        &:hover {
+            color: $c-primary;
+            border-color: $c-primary;
+        }
+    }
+
+    &--small {
+        font-size: 14px;
+    }
+}

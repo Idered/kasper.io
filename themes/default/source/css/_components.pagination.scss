@@ -1,0 +1,11 @@
+.c-pagination {
+    @extend %o-join;
+    @extend %o-join--small;
+
+    &__prev,
+    &__next {
+        @extend %o-btn;
+        @extend %o-btn--outline;
+        @extend %o-btn--small;
+    }
+}

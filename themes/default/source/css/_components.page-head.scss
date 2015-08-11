@@ -1,0 +1,28 @@
+.c-page-head {
+    @extend %o-join;
+    margin: 30px;
+
+    &__logo {
+        @extend %o-btn;
+        @extend %o-btn--primary;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+
+        &:hover {
+            box-shadow: none;
+            background: #111;
+        }
+    }
+
+    &__nav-list {
+        @extend %o-list-bare;
+        @extend %o-join;
+        line-height: 40px;
+    }
+    
+    &__nav-link {
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+    }
+}

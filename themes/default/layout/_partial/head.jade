@@ -1,0 +1,30 @@
+meta(charset="UTF-8")
+
+title
+  if page.title
+    = page.title
+  else
+    = config.title
+
+if config.author
+  meta(name="author", content=config.author)
+
+if config.description
+  meta(name="desciption", content=config.description)
+
+if theme.favicon
+  link(rel="icon", href=theme.favicon, type="image/x-icon")
+  link(rel="shortcut icon", href=theme.favicon, type="image/x-icon")
+
+link(rel="dns-prefetch", href="//www.google-analytics.com")
+
+meta(name="viewport", content="width=device-width", initial-scale="1.0")
+link(rel="stylesheet", type="text/css", href="/css/style.css")
+link(rel="publisher", href="https://plus.google.com/116964578938339291040")
+link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700")
+
+meta(name="og:title", content="Kasper Mikiewicz")
+meta(name="og:image", content="http://idered.pl/opengraph.png")
+meta(name="og:description", content="Front-End, Back-End developer &amp; web designer from Poland. Articles about HTML, CSS, JavaScript, Laravel stuff.")
+meta(name="og:type", content="website")
+meta(name="og:url", content="http://idered.pl")
