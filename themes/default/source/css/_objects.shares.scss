@@ -1,0 +1,17 @@
+.o-shares {
+    * {
+        display: inline-block !important;
+        vertical-align: top !important;
+    }
+
+    @include at(palm) {
+        & > * {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        & > * + * {
+            margin-top: 7px;
+        }
+    }
+}

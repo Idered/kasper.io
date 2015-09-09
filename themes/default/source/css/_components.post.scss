@@ -134,4 +134,22 @@
             }
         }
     }
+
+    &__share {
+        border-top: 1px solid #e5e5e5;
+        margin-top: 60px;
+        text-align: center;
+
+        &-text {
+            color: #ccc;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 300;
+            background: #fff;
+            display: inline-block;
+            position: relative;
+            top: -17px;
+            padding: 0 10px;
+        }
+    }
 }

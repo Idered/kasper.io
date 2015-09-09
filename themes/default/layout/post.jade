@@ -2,6 +2,9 @@ extends base
 
 block content
   - var date = page.date.format("D-MM-YYYY")
+  - var tags =  page.tags.data.map(function(tag) { return '#' + tag.name }).join(' ');
+
+
   article.c-post
     header.c-post__head
       h1.c-post__title= page.title
@@ -9,3 +12,8 @@ block content
         time(title=date datetime=date)= page.date.format("MMMM D, YYYY")
     section.c-post__body
       != page.content
+      .c-post__share
+        .c-post__share-text Like what you see? Spread the word:
+        div.o-shares.o-join.o-join--small
+          a.twitter-share-button(href="https://twitter.com/intent/tweet?text=" + page.title + ' ' + tags)
+          div.fb-like(data-href=page.permalink data-layout="button_count" data-action="like" data-show-faces="false" data-share="true")

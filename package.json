@@ -1,5 +1,5 @@
 {
-  "name": "idered.pl",
+  "name": "kasper.io",
   "version": "1.0.0",
   "private": true,
   "hexo": {
@@ -20,6 +20,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "deploy": "hexo generate && surge ./public idered.pl"
+    "deploy": "hexo generate && surge ./public kasper.io"
   }
 }

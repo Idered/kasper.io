@@ -1,4 +1,4 @@
-# idered.pl
+# kasper.io
 
 Hey there, I'm Kasper Mikiewicz and this is source of my personal blog.
 
