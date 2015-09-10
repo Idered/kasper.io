@@ -27,3 +27,8 @@ script.
   js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.4&appId=227357543966131";
   fjs.parentNode.insertBefore( js, fjs );
   }( document, 'script', 'facebook-jssdk' ));
+
+script.
+  window.addEventListener( "beforeunload", function () {
+    document.body.classList.add( "animate-out" );
+  } );
